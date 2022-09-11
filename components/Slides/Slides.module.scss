@@ -1,0 +1,25 @@
+.wrapper {
+  position: relative;
+  height: calc(100vh - var(--header-height));
+}
+.arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.arrow-left {
+  left: 10px;
+}
+.arrow-right {
+  right: 10px;
+}
+.slides {
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease-in-out;
+}
+.image {
+  width: 100vw;
+  height: 100%;
+}
