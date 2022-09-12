@@ -5,15 +5,18 @@ import images from '~/public/images'
 import styles from './Image.module.scss'
 const cx = classNames.bind(styles)
 
-function Image({ fallback: customFallback = images.noImage, src, alt, className, ...props }, ref) {
+function Image(
+  { fallback: customFallback = images.noImage, src, alt, className, onClick, ...props },
+  ref
+) {
   const [fallback, setFallback] = useState('')
 
   const handleError = () => {
     setFallback(customFallback)
   }
-
+  const classes = cx({ [className]: className }, 'wrapper')
   return (
-    <div ref={ref} className={cx('wrapper', className)}>
+    <div ref={ref} className={classes} onClick={onClick}>
       <img
         src={fallback || src}
         alt={alt}

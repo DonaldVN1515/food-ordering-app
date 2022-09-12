@@ -1,0 +1,44 @@
+.wrapper {
+  padding: var(--layout-padding);
+  background-color: var(--darkest-background);
+}
+.row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.col {
+  h6 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+}
+.about {
+  display: flex;
+  padding: 30px 0;
+  gap: 20px;
+}
+.image {
+  max-width: 100px;
+
+  & > img {
+    object-fit: contain;
+  }
+}
+.col-item {
+  cursor: pointer;
+  padding: 5px 0;
+  margin-left: 15px;
+
+  &:hover {
+    color: var(--secondary);
+  }
+}
+.copyright {
+  text-align: center;
+  padding: 30px 0 10px 0;
+  h6 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,10 +1,18 @@
 .wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--layout-padding);
   height: var(--header-height);
-  border-bottom: 1px solid var(--white);
+  padding: var(--layout-padding);
+  color: var(--secondary);
+  background-color: var(--background);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  // border-bottom: 1px solid var(--white);
 }
 
 // CALL
@@ -22,7 +30,6 @@
   text-transform: uppercase;
   margin-left: 15px;
   span {
-    display: block;
     font-size: 2rem;
 
     &:first-child {
@@ -41,7 +48,6 @@
   text-transform: capitalize;
   padding: 10px 20px;
   font-weight: bold;
-  color: var(--secondary);
 }
 .image {
   width: 50px;
@@ -56,13 +62,14 @@
 }
 .cart-counter {
   position: absolute;
-  top: -10px;
-  right: -8px;
-  width: 20px;
-  height: 20px;
+  display: block;
+  top: -15px;
+  right: -12px;
+  width: 24px;
+  height: 24px;
   font-weight: bold;
   text-align: center;
   border-radius: 50%;
-  color: var(--primary);
-  background-color: var(--white);
+  border: 1px solid var(--secondary);
+  background-color: var(--dark-background);
 }

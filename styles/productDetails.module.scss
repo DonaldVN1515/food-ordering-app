@@ -1,0 +1,143 @@
+.wrapper {
+  --gap: 20px;
+  display: grid;
+  gap: var(--item-padding);
+  grid-template-columns: repeat(2, 1fr);
+  padding: var(--item-padding);
+}
+
+// images
+.images {
+}
+.image {
+  height: 100%;
+  max-height: 400px;
+  margin-bottom: 20px;
+
+  & > img {
+    object-fit: contain;
+  }
+}
+.preview {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(3, 1fr);
+
+  .active {
+    border-color: var(--secondary);
+  }
+}
+.preview-image {
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s linear;
+}
+
+.content {
+}
+.name {
+  font-size: 3rem;
+}
+.price {
+  padding: 5px 0;
+  font-size: 2rem;
+  color: var(--secondary);
+}
+.desc {
+  padding: 5px 0;
+}
+// CHOOSE SIZES
+.content-title {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.options {
+  display: flex;
+  gap: var(--gap);
+  padding: 10px 0;
+
+  .active {
+    color: var(--secondary);
+  }
+}
+.sizes {
+  padding: 5px 0;
+  width: 100%;
+}
+.sizes-options {
+  gap: 60px;
+}
+
+.size {
+  cursor: pointer;
+  position: relative;
+  & > span {
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    font-size: 1.4rem;
+    background-color: var(--dark-background);
+    padding: 2px 10px;
+    border-radius: 8px;
+  }
+}
+
+.size-image {
+  max-width: 90px;
+}
+.size-small {
+  max-width: 50px;
+}
+.size-medium {
+  max-width: 70px;
+}
+.size-large {
+}
+// CHOOSE ingredients
+
+.ingredients {
+  padding: 5px 0;
+}
+.options {
+}
+.ingredient {
+}
+.checkbox {
+  display: none;
+}
+.label {
+  cursor: pointer;
+  display: block;
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding: 3px 10px 5px 10px;
+  border: 1px solid var(--secondary);
+}
+.checkbox:checked ~ .label {
+  color: var(--secondary);
+  background-color: var(--dark-background);
+}
+
+// ADD PRODUCTS
+.add {
+  display: flex;
+  padding: 10px 0;
+  gap: var(--gap);
+}
+.quantity {
+  font-size: 1.6rem;
+  height: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.btn {
+  cursor: pointer;
+  height: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  color: var(--white);
+  background-color: var(--secondary);
+}
