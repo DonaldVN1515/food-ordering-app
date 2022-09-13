@@ -2,10 +2,10 @@ import classNames from 'classnames/bind'
 import { useState, useEffect } from 'react'
 
 import Products from '~/components/Products'
-import styles from '~/styles/Products.module.scss'
+import styles from '~/styles/Shop.module.scss'
 
 const cx = classNames.bind(styles)
-function porducts() {
+function Shop() {
   const [slidesData, setSlidesData] = useState([])
 
   useEffect(() => {
@@ -52,4 +52,4 @@ function porducts() {
   return <Products data={slidesData} />
 }
 
-export default porducts
+export default Shop

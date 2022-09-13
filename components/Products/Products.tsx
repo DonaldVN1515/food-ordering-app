@@ -1,7 +1,8 @@
 import classNames from 'classnames/bind'
-// import Link from 'next/link'
+import Link from 'next/link'
 
 import Image from '~/components/Image'
+import config from '~/config'
 import styles from './Products.module.scss'
 
 const cx = classNames.bind(styles)
@@ -19,9 +20,9 @@ function Product({ data }) {
       <div className={cx('products-list')}>
         {data.map((product, index) => (
           <div key={index} className={cx('item')}>
-            {/* <Link href="/[id]"> */}
+            <Link href={`${config.paths.shop}/id`}>
               <Image src={product.imageUrl} alt={product.title} className={cx('image')} />
-            {/* </Link> */}
+            </Link>
             <div className={cx('content')}>
               <h4 className={cx('name')}>{product.title}</h4>
               <span className={cx('price')}>$2.5</span>

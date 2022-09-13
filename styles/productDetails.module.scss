@@ -54,6 +54,7 @@
 }
 .options {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--gap);
   padding: 10px 0;
 
@@ -87,20 +88,18 @@
 .size-image {
   max-width: 90px;
 }
-.size-small {
+.small {
   max-width: 50px;
 }
-.size-medium {
+.medium {
   max-width: 70px;
 }
-.size-large {
+.large {
 }
 // CHOOSE ingredients
 
 .ingredients {
   padding: 5px 0;
-}
-.options {
 }
 .ingredient {
 }
@@ -131,13 +130,4 @@
   height: 40px;
   font-weight: bold;
   text-align: center;
-}
-.btn {
-  cursor: pointer;
-  height: 40px;
-  font-weight: bold;
-  text-transform: capitalize;
-  padding: 10px 20px;
-  color: var(--white);
-  background-color: var(--secondary);
 }

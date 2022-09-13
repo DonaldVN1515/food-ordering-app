@@ -1,0 +1,36 @@
+// payment
+.payment {
+  height: fit-content;
+  border-radius: 5px;
+  padding: 20px 40px 40px 40px;
+  background-color: var(--dark-background);
+}
+.payment-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.payment-table {
+  width: 100%;
+  display: flex;
+  text-align: justify;
+
+  th,
+  td {
+    display: block;
+    min-width: 150px;
+    padding: 15px 0;
+  }
+  th {
+  }
+  td {
+  }
+}
+.payment-infor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.checkout {
+  margin-top: 20px;
+  width: 100%;
+}

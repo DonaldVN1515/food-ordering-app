@@ -1,0 +1,42 @@
+.wrapper {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--item-padding);
+}
+.infor {
+  width: 100%;
+}
+.infor-image {
+  display: flex;
+  justify-content: center;
+}
+.image {
+  max-width: 200px;
+}
+.infor-name {
+  font-weight: bold;
+  color: var(--secondary);
+  font-size: 1.6rem;
+}
+.table {
+  width: 100%;
+  border: 1px solid var(--dark-background);
+  text-align: center;
+
+  th,
+  td {
+    min-width: 150px;
+    border: 1px solid var(--dark-background);
+  }
+  th {
+    padding: 15px;
+  }
+  td {
+    padding: 20px;
+  }
+}
+.list {
+}
+.item {
+}

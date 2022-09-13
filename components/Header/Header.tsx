@@ -7,6 +7,7 @@ import Link from 'next/link'
 import styles from './Header.module.scss'
 import images from '~/public/images'
 import Image from '~/components/Image'
+import config from '~/config'
 
 const cx = classNames.bind(styles)
 function Header() {
@@ -25,36 +26,38 @@ function Header() {
 
       {/* NAV */}
       <div className={cx('nav')}>
-        <Link href="/">
+        <Link href={config.paths.home}>
           <a className={cx('nav-item')}>home</a>
         </Link>
-        <Link href="/products">
-          <a className={cx('nav-item')}>products</a>
+        <Link href={config.paths.shop}>
+          <a className={cx('nav-item')}>shop</a>
         </Link>
-        <Link href="/menu">
+        <Link href={config.paths.menu}>
           <a className={cx('nav-item')}>menu</a>
         </Link>
-        <Link href="/">
+        <Link href={config.paths.home}>
           <a className={cx('nav-item')}>
             <Image src={images.logo} alt="Logo" className={cx('image')} />
           </a>
         </Link>
-        <Link href="/events">
+        <Link href={config.paths.events}>
           <a className={cx('nav-item')}>events</a>
         </Link>
-        <Link href="/bog">
+        <Link href={config.paths.blog}>
           <a className={cx('nav-item')}>bog</a>
         </Link>
-        <Link href="/contact">
+        <Link href={config.paths.contact}>
           <a className={cx('nav-item')}>contact</a>
         </Link>
       </div>
 
       {/* CART */}
       <div className={cx('cart')}>
-        <i className={cx('cart-icon')}>
-          <FontAwesomeIcon icon={faCartShopping} />
-        </i>
+        <Link href={config.paths.cart}>
+          <i className={cx('cart-icon')}>
+            <FontAwesomeIcon icon={faCartShopping} />
+          </i>
+        </Link>
         <span className={cx('cart-counter')}>9</span>
       </div>
     </div>

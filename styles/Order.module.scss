@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  gap: 20px;
+  padding: var(--item-padding);
+}
+.order {
+  width: 100%;
+
+}
+.order-infor {
+}
+
+.order-table {
+  width: 100%;
+  border: 1px solid var(--dark-background);
+  text-align: center;
+
+  th,
+  td {
+    min-width: 150px;
+    border: 1px solid var(--dark-background);
+  }
+  th {
+    padding: 15px;
+  }
+  td {
+    padding: 20px;
+  }
+}
+
+// ORDER LOADING
+.order-loading {
+  
+}
