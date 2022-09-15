@@ -3,8 +3,9 @@
   background-color: var(--darkest-background);
 }
 .row {
-  display: flex;
   gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .col {
@@ -40,5 +41,23 @@
   padding: 30px 0 10px 0;
   h6 {
     font-size: 1.6rem;
+  }
+}
+// RESPONSIVE
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 480px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
   }
 }

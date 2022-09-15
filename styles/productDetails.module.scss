@@ -131,3 +131,23 @@
   font-weight: bold;
   text-align: center;
 }
+
+// RESPONSIVE
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    display: block;
+  }
+  .images {
+    margin-bottom: 20px;
+  }
+  .image {
+    max-height: 500px;
+  }
+  
+}
+@media screen and (max-width: 425px) {
+  .name {
+    font-size: 2rem;
+  }
+}

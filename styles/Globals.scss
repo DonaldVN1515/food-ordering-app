@@ -109,3 +109,46 @@ html *::-webkit-scrollbar-thumb {
     background: black;
   }
 } */
+
+// RESPONSIVE
+
+// RESPONSIVE
+@media screen and (max-width: 1600px) {
+}
+@media screen and (max-width: 1440px) {
+  
+}
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+}
+@media screen and (max-width: 1024px) {
+  :root {
+    --layout-padding: 0px 30px;
+    --layout-padding: 30px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --layout-padding: 0px 20px;
+    --item-padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 625px) {
+  :root {
+    --layout-padding: 0px 10px;
+    --item-padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  :root {
+    --header-height: 60px;
+  }
+}
+@media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 320px) {
+}

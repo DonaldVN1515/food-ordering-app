@@ -36,7 +36,7 @@ function Header() {
           <a className={cx('nav-item')}>menu</a>
         </Link>
         <Link href={config.paths.home}>
-          <a className={cx('nav-item')}>
+          <a className={cx('nav-item', 'nav-logo')}>
             <Image src={images.logo} alt="Logo" className={cx('image')} />
           </a>
         </Link>

@@ -1,8 +1,9 @@
 // payment
 .payment {
+  min-width: 300px;
   height: fit-content;
   border-radius: 5px;
-  padding: 20px 40px 40px 40px;
+  padding: 20px;
   background-color: var(--dark-background);
 }
 .payment-title {
@@ -14,11 +15,10 @@
   width: 100%;
   display: flex;
   text-align: justify;
-
+  justify-content: space-between;
   th,
   td {
     display: block;
-    min-width: 150px;
     padding: 15px 0;
   }
   th {
@@ -33,4 +33,20 @@
 .checkout {
   margin-top: 20px;
   width: 100%;
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 1200px) {
+  .payment {
+
+  }
+}
+@media screen and (max-width: 625px) {
+  .payment {
+    width: 100%;
+    margin: auto;
+    min-width: unset;
+  }
+
 }

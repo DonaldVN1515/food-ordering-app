@@ -55,6 +55,7 @@
 
 // CART
 .cart {
+  margin-right: 10px;
   position: relative;
   cursor: pointer;
 }
@@ -73,3 +74,39 @@
   border: 1px solid var(--secondary);
   background-color: var(--dark-background);
 }
+
+
+// REPSONSIVE
+@media screen and (max-width: 1024px) {
+
+  .call-number {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-item {
+    display: none;
+  }
+  .nav-logo {
+    display: block;
+  }
+}
+@media screen and (max-width: 425px) {
+  .nav-item {
+    padding: 10px;
+  }
+  .cart-counter {
+    top: -12px;
+    font-size: 1.3rem;
+    width: 20px;
+    height: 20px;
+  }
+  .cart-icon,
+  .call-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .call-icon {
+    padding: 8px;
+  }
+} 

@@ -5,7 +5,6 @@
 }
 .order {
   width: 100%;
-
 }
 .order-infor {
 }
@@ -17,7 +16,6 @@
 
   th,
   td {
-    min-width: 150px;
     border: 1px solid var(--dark-background);
   }
   th {
@@ -29,6 +27,124 @@
 }
 
 // ORDER LOADING
-.order-loading {
+.order-progress {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.progress-image {
+  max-width: 70px;
+}
+.progress-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.progress-label {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.progress-icon {
+  color: var(--secondary);
+  height: 20px;
+  width: 20px;
+}
+.progress-done {
+  display: flex;
+}
+.progress-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: inProgress 1s ease infinite alternate;
+}
+.progress-undone {
+  display: flex;
+  opacity: 0.3;
+}
+.progress-undone,
+.progress-in {
+  .progress-icon {
+    display: none;
+  }
+}
+
+// annimation
+
+@keyframes inProgress {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+// RESPONSIVE
+
+@media screen and (max-width: 1024px) {
+  .order {
+    margin-bottom: 20px;
+  }
+  .wrapper {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .order-table {
+    border: none;
+    td {
+      padding: 10px;
+    }
+  }
+}
+@media screen and (max-width: 625px) {
+  .order-progress {
+    margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
   
+}
+@media screen and (max-width: 425px) {
+  .order-table {
+    thead {
+      display: none;
+    }
+    tbody,
+    tr,
+    td {
+      padding: 5px;
+      display: block;
+      border: none;
+    }
+    td {
+      position: relative;
+
+      ::before {
+        position: absolute;
+      }
+    }
+    .order-id::before {
+      content: 'order id: ';
+    }
+    .order-customer::before {
+      content: 'customer: ';
+    }
+    .order-address::before {
+      content: 'address: ';
+    }
+    .order-total::before {
+      content: 'total: ';
+    }
+    .infor-image {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .order-progress {
+    margin-top: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

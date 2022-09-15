@@ -20,7 +20,7 @@
 .products-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--item-padding);
+  gap: 40px;
 }
 .item {
   border-radius: 5px;
@@ -49,4 +49,23 @@
   padding: 10px 0;
 }
 .desc {
+}
+// RESPONSIVE
+@media screen and (max-width: 1200px) {
+  .products-list {
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .products-list {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 625px) {
+  .products-list {
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
